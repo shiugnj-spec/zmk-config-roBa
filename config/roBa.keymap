@@ -39,19 +39,9 @@
             key-positions = <20 21>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-
         Escape {
             bindings = <&kp ESCAPE>;
             key-positions = <1 0>;
-        };
-
-        atmark {
-            bindings = <&kp AT_SIGN>;
-            key-positions = <20 21>;
         };
 
         half {
@@ -67,6 +57,16 @@
         f7 {
             bindings = <&kp F7>;
             key-positions = <22 23>;
+        };
+
+        under_score {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <33 32>;
+        };
+
+        at_sign {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <19 20>;
         };
     };
 
@@ -95,20 +95,20 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E             &kp R                   &kp T                                                       &kp Y        &kp U  &lt 5 I  &kp O    &kp P
-&mt LCTRL A       &kp S         &kp D             &kp F                   &kp G        &kp LS(LG(S))               &kp COLON          &kp H        &kp J  &kp K    &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                   &kp B        &kp LEFT_BRACKET            &kp RIGHT_BRACKET  &kp COMMA    &kp N  &kp M    &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 6 LANG2  &lt 2 SPACE  &lt_to_layer_0 3 LANG1      &kp BACKSPACE      &lt 1 ENTER                           &kp UNDERSCORE
+&kp Q             &kp W         &kp E             &kp R                &kp T                                                    &kp Y        &kp U  &kp I               &kp O    &kp P
+&mt LCTRL A       &kp S         &kp D             &kp F                &kp G        &kp F12                      &kp F10        &kp H        &kp J  &lt_to_layer_0 5 K  &kp L    &lt_to_layer_0 4 MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                &kp B        &kp F9                       &kp F11        &kp COMMA    &kp N  &kp M               &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp ESCAPE        &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 1 F7  &lt 2 SPACE  &lt_to_layer_0 3 DELETE      &kp BACKSPACE  &lt 1 ENTER                                      &lt_to_layer_0 6 COLON
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         NUMBER,ARROWS {
             bindings = <
 &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5                          &kp NUMBER_6      &kp NUMBER_7      &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &trans      &trans  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp UP_ARROW  &trans           &trans
-&trans            &trans            &trans            &trans            &trans            &trans      &trans  &trans            &kp LEFT_ARROW    &kp DOWN      &kp RIGHT_ARROW  &trans
+&kp KP_PLUS       &kp KP_MINUS      &kp KP_MULTIPLY   &kp KP_DIVIDE     &trans            &trans      &trans  &trans            &kp LEFT_ARROW    &kp DOWN      &kp RIGHT_ARROW  &trans
 &trans            &trans            &trans            &trans            &trans            &trans      &trans  &trans                                                             &trans
             >;
 
@@ -132,7 +132,7 @@
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(LEFT_BRACKET) LG(RIGHT_BRACKET)>;
+            sensor-bindings = <&inc_dec_kp LG(LEFT_ARROW) LG(RIGHT_ARROW)>;
         };
 
         MOUSE {
