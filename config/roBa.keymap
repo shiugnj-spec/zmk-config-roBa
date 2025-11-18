@@ -63,6 +63,16 @@
             bindings = <&kp AT_SIGN>;
             key-positions = <20 21>;
         };
+
+        half {
+            bindings = <&kp LANG2>;
+            key-positions = <13 14>;
+        };
+
+        kana {
+            bindings = <&kp LANG1>;
+            key-positions = <17 18>;
+        };
     };
 
     macros {
