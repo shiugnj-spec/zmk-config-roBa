@@ -62,8 +62,8 @@
             key-positions = <22 23>;
         };
 
-        under_score {
-            bindings = <&kp UNDERSCORE>;
+        eauqls {
+            bindings = <&kp EQUAL>;
             key-positions = <33 32>;
         };
 
