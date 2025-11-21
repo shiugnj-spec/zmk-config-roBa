@@ -18,7 +18,7 @@
     excluded-positions = <
         18 // J
         19 // K
-        21 // ;
+        22 // Z shift
         34 // Ctrl
     >;
 };
