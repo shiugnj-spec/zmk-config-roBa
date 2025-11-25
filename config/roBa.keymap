@@ -146,8 +146,8 @@
         LEFT1 {
             bindings = <
 &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5                          &kp NUMBER_6      &kp NUMBER_7      &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &trans      &trans  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &trans        &tilde        &lt_to_layer_0 5 TILDE
-&kp LG(LS(Z))     &trans            &trans            &trans            &trans            &trans      &trans  &kp APOS          &trans            &trans        &trans        &trans
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &trans      &trans  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp INT_YEN   &tilde        &lt_to_layer_0 5 TILDE
+&kp LG(LS(Z))     &trans            &trans            &kp LC(LG(V))     &trans            &trans      &trans  &kp APOS          &trans            &trans        &trans        &trans
 &trans            &trans            &trans            &trans            &trans            &trans      &trans  &trans                                                          &lt_to_layer_0 8 SEMI
             >;
 
@@ -156,7 +156,7 @@
 
         LEFT2 {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &kp LS(NUMBER_9)                          &kp LS(NUMBER_0)       &trans  &trans  &trans  &trans
+&kp F1  &kp F2   &kp F3   &kp F4   &kp LS(NUMBER_9)                          &kp LS(NUMBER_0)       &trans  &trans  &trans  &kp PIPE
 &kp F5  &kp F6   &kp F7   &kp F8   &kp LEFT_BRACKET      &trans      &trans  &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans
 &kp F9  &kp F10  &kp F11  &kp F12  &kp LS(LEFT_BRACKET)  &trans      &trans  &kp LS(RIGHT_BRACKET)  &trans  &trans  &trans  &trans
 &trans  &trans   &trans   &trans   &trans                &trans      &trans  &trans                                         &trans
@@ -189,10 +189,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans         &trans                &trans  &trans                 &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &numamidabutz  &kp LG(LEFT_BRACKET)  &trans  &kp LG(RIGHT_BRACKET)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &dummy         &trans                &trans  &trans                 &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                              &trans
+&kp LG(LA(NUMBER_1))  &kp LS(LG(NUMBER_2))  &kp LG(LS(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LG(LS(NUMBER_5))                      &trans         &trans                &trans  &trans                 &trans
+&trans                &trans                &trans                &trans                &trans                &trans      &trans  &numamidabutz  &kp LG(LEFT_BRACKET)  &trans  &kp LG(RIGHT_BRACKET)  &trans
+&kp LG(LS(Z))         &trans                &trans                &kp LG(LC(V))         &trans                &trans      &trans  &dummy         &trans                &trans  &trans                 &trans
+&trans                &trans                &trans                &trans                &trans                &trans      &trans  &trans                                                              &trans
             >;
         };
 
