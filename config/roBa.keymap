@@ -146,9 +146,9 @@
         LEFT1 {
             bindings = <
 &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5                          &kp NUMBER_6      &kp NUMBER_7      &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &trans      &trans  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp INT_YEN   &tilde        &lt_to_layer_0 5 TILDE
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &trans      &trans  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp INT_YEN   &tilde        &kp TILDE
 &kp LG(LS(Z))     &trans            &trans            &kp LC(LG(V))     &trans            &trans      &trans  &kp APOS          &trans            &trans        &trans        &trans
-&trans            &trans            &trans            &trans            &trans            &trans      &trans  &trans                                                          &lt_to_layer_0 8 SEMI
+&to 0             &trans            &trans            &trans            &trans            &trans      &trans  &trans                                                          &kp SEMI
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -159,7 +159,7 @@
 &kp F1  &kp F2   &kp F3   &kp F4   &kp LS(NUMBER_9)                          &kp LS(NUMBER_0)       &trans  &trans  &trans  &kp PIPE
 &kp F5  &kp F6   &kp F7   &kp F8   &kp LEFT_BRACKET      &trans      &trans  &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans
 &kp F9  &kp F10  &kp F11  &kp F12  &kp LS(LEFT_BRACKET)  &trans      &trans  &kp LS(RIGHT_BRACKET)  &trans  &trans  &trans  &trans
-&trans  &trans   &trans   &trans   &trans                &trans      &trans  &trans                                         &trans
+&to 0   &trans   &trans   &trans   &trans                &trans      &trans  &trans                                         &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -170,7 +170,7 @@
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&to 0   &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -181,7 +181,7 @@
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &mkp MB3
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &mkp MB4  &mkp MB5
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
+&to 0   &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -192,16 +192,16 @@
 &kp LG(LA(NUMBER_1))  &kp LS(LG(NUMBER_2))  &kp LG(LS(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LG(LS(NUMBER_5))                      &trans         &trans                &trans  &trans                 &trans
 &trans                &trans                &trans                &trans                &trans                &trans      &trans  &numamidabutz  &kp LG(LEFT_BRACKET)  &trans  &kp LG(RIGHT_BRACKET)  &trans
 &kp LG(LS(Z))         &trans                &trans                &kp LG(LC(V))         &trans                &trans      &trans  &dummy         &trans                &trans  &trans                 &trans
-&trans                &trans                &trans                &trans                &trans                &trans      &trans  &trans                                                              &trans
+&to 0                 &trans                &trans                &trans                &trans                &trans      &trans  &trans                                                              &trans
             >;
         };
 
         RIGHT1 {
             bindings = <
 &trans     &kp LG(W)  &trans     &kp LG(R)  &kp LG(T)                      &kp KP_COMMA  &kp KP_NUMBER_7  &kp KP_N8  &kp KP_N9        &kp KP_PLUS
-&kp LG(A)  &trans     &trans     &kp LG(F)  &trans     &trans      &trans  &kp KP_DOT    &kp KP_N4        &kp KP_N5  &kp KP_NUMBER_6  &lt_to_layer_0 5 KP_MINUS
-&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans     &trans      &trans  &kp KP_N0     &kp KP_N1        &kp KP_N2  &kp KP_N3        &kp KP_MULTIPLY
-&trans     &trans     &trans     &trans     &trans     &trans      &trans  &trans                                                     &lt_to_layer_0 8 KP_DIVIDE
+&kp LG(A)  &trans     &trans     &kp LG(F)  &trans     &trans      &trans  &kp KP_DOT    &kp KP_N4        &kp KP_N5  &kp KP_NUMBER_6  &kp KP_MINUS
+&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans     &trans      &trans  &kp KP_N0     &kp KP_N1        &kp KP_N2  &kp KP_N3        &kp KP_DIVIDE
+&to 0      &trans     &trans     &trans     &trans     &trans      &trans  &trans                                                     &kp KP_MULTIPLY
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -212,7 +212,7 @@
 &trans  &trans  &trans  &trans  &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&to 0   &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
 
@@ -221,7 +221,7 @@
 &trans  &trans  &trans  &trans  &trans                      &trans  &to 7  &to 8  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &to 4  &to 5  &to 6   &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &to 0   &to 1  &to 2  &to 3   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                        &trans
+&to 0   &trans  &trans  &trans  &trans  &trans      &trans  &trans                        &trans
             >;
         };
     };
