@@ -167,10 +167,10 @@
 
         LEFT3 {
             bindings = <
-&trans  &trans  &trans  &trans  &kp LA(SPACE)                          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans             &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp LS(LA(SPACE))  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&to 0   &trans  &trans  &trans  &trans             &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans             &kp LA(SPACE)                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans             &trans         &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LA(LS(SPACE))  &trans         &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&to 0   &trans  &trans  &trans             &trans         &trans      &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
