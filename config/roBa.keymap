@@ -178,10 +178,10 @@
 
         LEFT3 {
             bindings = <
-&trans  &trans  &trans  &trans             &kp LA(SPACE)                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans             &trans         &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp LA(LS(SPACE))  &trans         &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&to 0   &trans  &trans  &trans             &trans         &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&to 0   &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -200,10 +200,10 @@
 
         SCROLL {
             bindings = <
-&kp LG(LA(NUMBER_1))  &kp LS(LG(NUMBER_2))  &kp LG(LS(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LG(LS(NUMBER_5))                      &trans         &trans                &trans  &trans                 &trans
-&trans                &trans                &trans                &trans                &trans                &trans      &trans  &numamidabutz  &kp LG(LEFT_BRACKET)  &trans  &kp LG(RIGHT_BRACKET)  &trans
-&kp LG(LS(Z))         &trans                &trans                &kp LG(LC(V))         &trans                &trans      &trans  &dummy         &trans                &trans  &trans                 &trans
-&to 0                 &trans                &trans                &trans                &trans                &trans      &trans  &trans                                                              &trans
+&kp LG(LA(NUMBER_1))  &kp LS(LG(NUMBER_2))  &kp LG(LS(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LG(LS(NUMBER_5))                      &trans  &trans                &trans  &trans                 &trans
+&kp LA(SPACE)         &kp LA(LS(SPACE))     &trans                &trans                &trans                &trans      &trans  &trans  &kp LG(LEFT_BRACKET)  &trans  &kp LG(RIGHT_BRACKET)  &trans
+&kp LG(LS(Z))         &trans                &trans                &kp LG(LC(V))         &trans                &trans      &trans  &dummy  &trans                &trans  &trans                 &trans
+&to 0                 &trans                &trans                &trans                &trans                &trans      &trans  &trans                                                       &trans
             >;
         };
 
