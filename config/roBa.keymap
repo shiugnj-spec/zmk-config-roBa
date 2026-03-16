@@ -171,10 +171,10 @@
 
         LEFT3 {
             bindings = <
-&trans  &kp LS(LG(NUMBER_2))  &kp ENTER  &trans  &trans                                   &trans  &trans  &trans  &trans  &trans
-&trans  &trans                &trans     &trans  &kp UP_ARROW  &trans             &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                &trans     &trans  &kp DOWN      &kp BACKSPACE      &trans  &trans  &trans  &trans  &trans  &trans
-&to 0   &trans                &trans     &trans  &trans        &trans             &trans  &trans                          &trans
+&trans  &kp LS(LG(NUMBER_2))  &kp ENTER  &kp LS(LG(NUMBER_4))  &trans                                   &trans  &trans  &trans  &trans  &trans
+&trans  &trans                &trans     &trans                &kp UP_ARROW  &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                &trans     &trans                &kp DOWN      &kp BACKSPACE      &trans  &trans  &trans  &trans  &trans  &trans
+&to 0   &trans                &trans     &trans                &trans        &trans             &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
